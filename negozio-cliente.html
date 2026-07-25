@@ -48,7 +48,7 @@
 <button type="submit" class="btn btn-primary" style="width:100%;padding:14px;font-size:16px">Accedi al Negozio</button>
 </form>
 <div id="loginError" class="error-message"></div>
-<p style="margin-top:20px;font-size:14px;color:#666">Non hai un codice? <a href="mailto:weddinggel@aruba.it" style="color:#667eea">Contatta lo Studio</a></p>
+<p style="margin-top:20px;font-size:14px;color:#666">Non hai un codice? <a href="mailto:mairaluigi@hotmail.it" style="color:#667eea">Contatta lo Studio</a></p>
 <p style="margin-top:15px"><a href="index.html" style="color:#667eea">← Torna alla pagina iniziale</a></p>
 </div>
 </div>
@@ -84,8 +84,8 @@ Il ritiro dei prodotti avviene presso il nostro Studio.<br>
 <div class="studio-address">
 <strong>G&LStudio</strong><br>
 Via Ciarrocco 21 Canicattì (AG)<br>
-Tel: 389 4816231<br>
-Email: weddinggel@aruba.it
+Tel: 3206337370<br>
+Email: mairaluigi@hotmail.it
 </div>
 </div>
 <button class="btn btn-success" onclick="completeOrder()" style="width:100%;padding:15px;font-size:18px;margin-top:15px">✅ Completa Ordine</button>
@@ -125,7 +125,7 @@ Email: weddinggel@aruba.it
 <h3>💳 Paga ora con PayPal</h3>
 <p>Clicca il pulsante per completare il pagamento in sicurezza:</p>
 <a id="paypalLink" href="#" target="_blank" class="paypal-btn">💳 Paga con PayPal</a>
-<p style="font-size:13px;color:#666;margin-top:10px">Verrai reindirizzato a PayPal per pagare l'importo di <strong>€ <span id="paypalAmount"></span></strong> all'indirizzo:<br><strong>weddinggel@aruba.it</strong></p>
+<p style="font-size:13px;color:#666;margin-top:10px">Verrai reindirizzato a PayPal per pagare l'importo di <strong>€ <span id="paypalAmount"></span></strong> all'indirizzo:<br><strong>mairaluigi@hotmail.it</strong></p>
 </div>
 <div class="contact-info">
 <h3>📞 Contatta lo Studio</h3>
@@ -135,8 +135,8 @@ Email: weddinggel@aruba.it
 <p>✅ Concordare i tempi di consegna</p>
 <p>✅ Organizzare il ritiro in studio</p>
 <p style="margin-top:15px"><strong>Per informazioni immediate:</strong></p>
-<p>📞 Tel: 389 4816231</p>
-<p>📧 Email: weddinggel@aruba.it</p>
+<p>📞 Tel: 3206337370</p>
+<p>📧 Email: mairaluigi@hotmail.it</p>
 <p>📍 Via Ciarrocco 21 Canicattì (AG)</p>
 <p style="margin-top:15px;font-size:13px;color:#666">⚠️ Eventuali spedizioni sono a carico del cliente.</p>
 </div>
@@ -273,7 +273,7 @@ function completeOrder() {
     
     generateProfessionalPDF(order);
     
-    const paypalEmail = 'weddinggel@aruba.it';
+    const paypalEmail = 'mairaluigi@hotmail.it';
     const paypalUrl = 'https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=' + encodeURIComponent(paypalEmail) + '&currency_code=EUR&amount=' + total.toFixed(2) + '&item_name=Ordine_G&LStudio_' + orderId;
     
     document.getElementById('clientSection').style.display = 'none';
@@ -315,7 +315,7 @@ function generateProfessionalPDF(order) {
     
     doc.setFontSize(11);
     doc.text('Via Ciarrocco 21 Canicattì (AG)', 105, 38, { align: 'center' });
-    doc.text('Tel: 389 4816231 | Email: weddinggel@aruba.it', 105, 44, { align: 'center' });
+    doc.text('Tel: 3206337370 | Email: mairaluigi@hotmail.it', 105, 44, { align: 'center' });
     
     doc.setTextColor(colors.primary[0], colors.primary[1], colors.primary[2]);
     doc.setFontSize(16);
@@ -432,8 +432,8 @@ function generateProfessionalPDF(order) {
     doc.setFont('helvetica', 'normal');
     doc.text('Il ritiro avviene presso il nostro Studio:', 25, infoY + 13);
     doc.text('Via Ciarrocco 21 Canicattì (AG)', 25, infoY + 21);
-    doc.text('Tel: 389 4816231', 25, infoY + 29);
-    doc.text('Email: weddinggel@aruba.it', 25, infoY + 37);
+    doc.text('Tel: 3206337370', 25, infoY + 29);
+    doc.text('Email: mairaluigi@hotmail.it', 25, infoY + 37);
     doc.setFont('helvetica', 'italic');
     doc.text('⚠️ Eventuali spedizioni sono a carico del cliente.', 25, infoY + 45);
     
